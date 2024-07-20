@@ -86,7 +86,7 @@
           <div class="container">
             <div class="font-alt mb-30 titan-title-size-4">Welcome To SportLine</div>
             <div class="font-alt">Watch Free Live Cricket With US <br>League - Series - PLayers - Scores And More</div>
-            <div class="font-alt mt-30"><a class="btn btn-border-w btn-circle"
+            <div class="font-alt mt-30"><a class="btn btn-g btn-circle"
                 href="https://livesportscricket.online/apk/SportLine.apk"><i class="icon-download"></i>
                 Download App</a></div>
           </div>
@@ -108,8 +108,8 @@
               <div class="module-subtitle font-serif large-text">We’re Providing Live 4K Streaming of Cricket Matches.
                 Just Download App from Below Button And Enjoy Fastest Update.
                 <div class="text-center">
-                  <div class="btn-group mt-30"><a class="btn btn-border-d btn-circle" href="#"><i
-                        class="fa fa-android"></i> Download Now</a></div>
+                  <div class="btn-group mt-30"><a class="btn btn-b btn-circle" href="#"><i class="fa fa-android"></i>
+                      Download Now</a></div>
                 </div>
               </div>
             </div>
@@ -144,22 +144,22 @@
           <div class="row">
             <div class="col-sm-6 col-md-3 col-lg-3">
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-strategy"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-strategy"></span></div> -->
                 <h3 class="alt-features-title font-alt">Fastest Live Scores</h3>Stay updated with real-time scores and
                 instant match updates.
               </div>
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-tools-2"></span></div> -->
                 <h3 class="alt-features-title font-alt">Detailed Match Statistics</h3>Dive deep into match stats, player
                 performances, and in-depth analysis.
               </div>
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-target"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-target"></span></div> -->
                 <h3 class="alt-features-title font-alt">Comprehensive Coverage</h3>Access detailed information on
                 leagues, teams, and players from around the world.
               </div>
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-tools"></span></div> -->
                 <h3 class="alt-features-title font-alt">Fixture & Results Calendar</h3>Plan ahead with our complete
                 fixture list and catch up on past match results.
               </div>
@@ -170,22 +170,22 @@
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-camera"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-camera"></span></div> -->
                 <h3 class="alt-features-title font-alt">Latest News & Highlights</h3>Get the latest cricket news, watch
                 highlights, and relive key moments.
               </div>
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-mobile"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-mobile"></span></div> -->
                 <h3 class="alt-features-title font-alt">Personalized Notification</h3>Customize your feed and receive
                 notifications for your favorite teams and matches.
               </div>
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-linegraph"></span></div> -->
                 <h3 class="alt-features-title font-alt">Engage with Fans</h3>Join our community, participate in
                 discussions, and share your cricket passion.
               </div>
               <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-basket"></span></div>
+                <!-- <div class="alt-features-icon"><span class="icon-basket"></span></div> -->
                 <h3 class="alt-features-title font-alt">Secure & Private</h3>We prioritize your privacy and security,
                 ensuring your data is safe.
               </div>
@@ -306,6 +306,32 @@
   <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDd9HRMo58f8lg3vysPZTsCS18tOr5qNz4",
+      authDomain: "cricketlive-e61c8.firebaseapp.com",
+      databaseURL: "https://cricketlive-e61c8-default-rtdb.firebaseio.com",
+      projectId: "cricketlive-e61c8",
+      storageBucket: "cricketlive-e61c8.appspot.com",
+      messagingSenderId: "137047518182",
+      appId: "1:137047518182:web:8010bb14cea003db7c0427",
+      measurementId: "G-5R68V0PNYP"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
 </body>
 
 </html>
